@@ -6,6 +6,7 @@
 - `Age:` 21 years old
 - `Current status`: looking for a job
 - `Education:` Secondary, Secondary special education as *Computer Networks engeneer*
+- `Hobbies:` muscic, 3d modeling, gaming
 
 
 Links:
