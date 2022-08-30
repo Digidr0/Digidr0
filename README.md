@@ -13,4 +13,5 @@ Links:
 - VK: [link](https://vk.com/digidro)
 - Steam: [link](https://steamcommunity.com/id/Digidro/)
 - Discord: [Digidro#5472](https://discordapp.com/users/330829326297726977)
+- Deviart: [link](https://deviantart.com/Digidro)
 - Email: digidro.work@gmail.com 
