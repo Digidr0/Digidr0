@@ -1,4 +1,4 @@
-# Hi there 👋, i am Digidr0!
+# Hi there 👋, I am Digidr0!
 ### Welcome to my page. I am a novice javascript programmer. Works with raw js, html and css, as the React-components apps.
 
 ### Some information about me:
