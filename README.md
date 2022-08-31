@@ -1,5 +1,5 @@
 # Hi there 👋, I am Digidr0!
-### Welcome to my page. I am a novice javascript programmer. Works with raw js, html and css, as the React-components apps.
+### Welcome to my page. I am a novice javascript programmer. I am working with raw js, html and css, as the React-components apps.
 
 ### Some information about me:
 - `Name:` Ildar Grankin
