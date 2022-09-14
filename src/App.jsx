@@ -1,11 +1,15 @@
 import { useState } from 'react'
+import Header from './Components/Header'
+import Projects from './Components/Projects/Projects'
+import Profile from './Components/Profile/Profile'
 import './App.css'
 
 function App() {
   return (
     <div className="App">
-     <h1>Welcome to Digidro official page!</h1>
-     <a href='https://github.com/digidr0'>GitHub</a>
+     <Header />
+     <Profile />
+     <Projects />
     </div>
   )
 }

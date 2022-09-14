@@ -1,0 +1,25 @@
+.Header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 2.5em;
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  font-weight: 300;
+  letter-spacing: 0.12em;
+}
+.header--name {
+  font-size: 1.2em;
+  margin-left: 6em;
+}
+.header--link {
+  margin: 1em;
+}
+.header--link:hover {
+  color: dodgerblue;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.SectionScroll {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0.4;
+  transition: opacity 0.2s linear;
+  user-select: none;
+}
+.SectionScroll:hover,
+.SectionScroll:focus {
+  opacity: 1;
+}
+.sectionScroll-inline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sectionScroll-text {
+  text-align: center;
+  width: max-content;
+  margin: 0 1em 0 1em;
+}
+.hr {
+  flex: 1;
+  height: 1px;
+  background-color: white;
+}
+.expand_more {
+  animation: hovering 1s infinite ease-in-out
+}
+
+@keyframes hovering {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -5px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
