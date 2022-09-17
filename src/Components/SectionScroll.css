@@ -3,10 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 3em;
 
   opacity: 0.4;
   transition: opacity 0.2s linear;
   user-select: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 .SectionScroll:hover,
 .SectionScroll:focus {
@@ -28,7 +31,7 @@
   background-color: white;
 }
 .expand_more {
-  animation: hovering 1s infinite ease-in-out
+  animation: hovering 1.25s infinite ease-in-out;
 }
 
 @keyframes hovering {

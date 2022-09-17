@@ -1,17 +1,24 @@
 .Profile {
-  width: 100%;
+  width: calc(100% - 20em);
   height: 90vh;
-  background-color: #222630;
+  padding-left: 10em;
+  padding-right: 10em;
+  background-color: var(--background-color-accent);
+  background: linear-gradient(
+    175deg,
+    rgba(0, 0, 0, 0.2) 20%,
+    var(--background-color-accent) 60%
+  );
 }
 
 .profile--info {
   display: flex;
-  height: 80%;
+  height: 80vh;
 }
 
 .info--description {
+  z-index: 2;
   display: flex;
-  justify-content: left;
 }
 
 .description-container {
@@ -24,49 +31,49 @@
 .greeteng {
   font-weight: 200;
 }
-.gradient-text-container{
+.gradient-text-container {
   position: sticky;
   top: -20px;
   z-index: 10;
   display: flex;
   align-items: center;
 }
-.gradient-text {
-  z-index: 10;
-  
+.nickname-container {
+  content: "";
   display: flex;
   align-items: center;
   height: 1.1em;
   font-size: 2em;
 
-  background: -webkit-linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  height: 2em;
 
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 }
-.job-status{
- line-height: 1em;
+.job-status {
+  line-height: 1em;
 }
 .about-me.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 1em;
   font-size: 1em;
   padding: 0.3em;
   max-width: 10em;
-  margin-top: 2em;
+  margin-top: 1em;
   background-color: var(--color-accent);
   border: none;
   border-radius: 0.2em;
 }
-.info-photo {
-  display: flex;
-  justify-content: right;
+.about-me.btn:hover,
+.about-me.btn:focus {
+  background-color: var(--color-accent2);
+}
+.Cube {
   width: 100%;
+}
+.cube-img {
+  height: 100%;
 }

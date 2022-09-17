@@ -11,9 +11,12 @@
   -webkit-text-size-adjust: 100%;
 
   --color: #ffffff;
-  --color-accent: #4175d0;
+  --color-accent: #1387b8;
+  --color-accent2: #c850c0;
+  --color-accent3: #ffcc70;
   --background-color: #242424;
   --background-color-dark: #222222;
+  --background-color-accent: #222630;
   --background-color-light: #323232;
 
   color-scheme: light dark;
@@ -23,14 +26,24 @@
 * {
   margin: 0;
   padding: 0;
-  transition: opacity 0.5s;
+  transition: all 0.5s;
   /* outline: 1px solid rgba(255, 0, 0, 0.2); */
 }
 body {
-  height: 1000vh;
+  height: max-content;
   /* scroll-behavior: smooth; */
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 200, "opsz" 40;
+}
+a,
+button {
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
 }

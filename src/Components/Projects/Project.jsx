@@ -29,13 +29,11 @@ function Project(props) {
   function getName() {
     return props.link.split("/");
   }
-  // const element = md.render(description)
   let element = `<div>${md.render(description)}</div>`;
-  // console.log(md.render(description).toString())
   element = StR(element);
   return (
     <div className="Project">
-      {props.imagePath ? (
+      {props.imagePath && props.animation ? (
         <img className="project-cover" src={imageLink}></img>
       ) : (
         <div className="project-cover empty" style={coverStyle}></div>
@@ -44,14 +42,14 @@ function Project(props) {
         <h3 className="project-title">{getName()[4]}</h3>
         <div className="project-description">{element}</div>
         <div className="project-links">
-          <div className="project-link-container">
+          <div className="project-repo">
             <span className="material-symbols-outlined">folder_copy</span>
             <a className="project-link" href={props.link}>
               Repository
             </a>
           </div>
           {props.ghPages && (
-            <div className="project-link-container">
+            <div className="project-live">
               <span className="material-symbols-outlined">podcasts</span>
               <a
                 className="project-link"

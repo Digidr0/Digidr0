@@ -1,11 +1,18 @@
-import SVG from "..//..//assets/portrait.svg"
-import "./Portrait.css";
-function Portrait(props) {
+import { useEffect, useState } from "react";
+import imgArray from "./profile-images";
+
+import ImageScroll from "../Scroll";
+function Cube(props) {
+  const [index, setIndex] = useState(1);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setIndex(ImageScroll(30, ".Cube", 2.75));
+    });
+  }, []);
   return (
-    <div className="Portrait">
-      <img className="portrait-photo grayscale" src={props.img}></img>
-      <img src={SVG} className="portrait-composition"></img>
+    <div className="Cube">
+      <img className="cube-img" src={imgArray[index]}></img>
     </div>
   );
 }
-export default Portrait;
+export default Cube;

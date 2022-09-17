@@ -1,0 +1,44 @@
+.Links {
+  width: 90%;
+}
+.links-hr {
+  opacity: 0.2;
+}
+.links-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  align-items: center;
+}
+.Link {
+  opacity: 0.2;
+  padding: 0.5em;
+}
+.Link:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+.Github:hover {
+  color: #171515;
+}
+.Steam:hover {
+  color: #144b7e;
+}
+.VKontakte:hover {
+  color: #0077FF;
+}
+.Devainart:hover {
+  color: #5EAC74;
+}
+.Discord:hover {
+  color: #5865F2;
+}
+.Telegram:hover {
+  color: #0088CC;
+}
+

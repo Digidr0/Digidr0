@@ -1,7 +1,7 @@
 import { Octokit, App } from "https://cdn.skypack.dev/octokit?dts";
 export default async function GetContent(owner, repo, path) {
   const octokit = new Octokit({
-    auth: "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",
+    auth: "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",
   });
 
   const result = await octokit.request("/repos/{owner}/{repo}/contents/{path}", {

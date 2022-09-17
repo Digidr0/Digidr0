@@ -10,20 +10,19 @@ function Profile(props) {
           <div className="description-container">
             <span className="greeteng">Hello, I am</span>
             <div className="gradient-text-container">
-              <h2 className="gradient-text">@digidro</h2>
+              <div className="nickname-container"></div>
             </div>
             <span className="job-status">
-              novice javascript and React programmer.
+              Javascript and React programmer, 3D designer
             </span>
-            <button className="about-me btn">More about me</button>
+            <a className="about-me btn" href="#about">
+              More about me
+            </a>
           </div>
         </div>
-        <div className="info-photo">
-          <Portrait img={photo} />
-        </div>
+        <Portrait img={photo} />
       </div>
-        <SectionScroll section="my projects "/>
-      
+      <SectionScroll section="my projects" href="projects" />
     </div>
   );
 }
