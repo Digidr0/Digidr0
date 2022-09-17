@@ -33,6 +33,7 @@ function Projects(props) {
         />
         <Project
           link="https://github.com/Digidr0/Overwatch-api"
+          imagePath="/img/demo.png"
           ghPages={true}
           animation={animation}
         />
