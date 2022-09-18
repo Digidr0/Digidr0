@@ -14,8 +14,10 @@
   font-weight: 400;
   align-items: center;
 }
-.Link {
-  opacity: 0.2;
+.Link,
+.Link:visited {
+  color: inherit;
+  opacity: 0.5;
   padding: 0.5em;
 }
 .Link:hover {

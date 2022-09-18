@@ -1,6 +1,5 @@
 import "./Profile.css";
-import photo from "../../assets/portrait.png";
-import Portrait from "./Portrait";
+import Cube from "./Cube";
 import SectionScroll from "../SectionScroll";
 function Profile(props) {
   return (
@@ -20,7 +19,7 @@ function Profile(props) {
             </a>
           </div>
         </div>
-        <Portrait img={photo} />
+        <Cube frames={30} speed={1.25} timeout={0.4} blurMultiplier={10} />
       </div>
       <SectionScroll section="my projects" href="projects" />
     </div>

@@ -37,6 +37,7 @@
   z-index: 10;
   display: flex;
   align-items: center;
+
 }
 .nickname-container {
   content: "";
@@ -52,6 +53,8 @@
 }
 .job-status {
   line-height: 1em;
+
+  
 }
 .about-me.btn {
   display: flex;
@@ -64,16 +67,21 @@
   max-width: 10em;
   margin-top: 1em;
   background-color: var(--color-accent);
+  color: inherit;
   border: none;
   border-radius: 0.2em;
+  transition: background-color .15s;
 }
 .about-me.btn:hover,
 .about-me.btn:focus {
   background-color: var(--color-accent2);
 }
 .Cube {
+  display: flex;
   width: 100%;
 }
 .cube-img {
   height: 100%;
+  transition: filter(1s);
+
 }

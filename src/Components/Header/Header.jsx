@@ -4,14 +4,14 @@ function Header(props) {
     <div className="Header">
       <div className="header--nickname-container"></div>
       <div className="header--links">
-        <a className="header--link" href="#about">
+        <a className="header--link about" href="#about">
           About
         </a>
-        <a className="header--link" href="#links">
+        <a className="header--link links" href="#links">
           Links
         </a>
         <a
-          className="header--link"
+          className="header--link mail"
           onClick={()=>window.open(`mailto:ildar.grankin@gmail.com`)}
         >
           Contact

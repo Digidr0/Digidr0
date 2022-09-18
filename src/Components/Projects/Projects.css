@@ -66,12 +66,9 @@
 .project-repo:hover, .project-live:hover {
   opacity: 1;
 }
-.project-repo{
+.project-repo > *{
   color: var(--color-accent);
 }
-.project-live{
+.project-live > *{
   color: var(--color-accent2);
-}
-:visited{
-  color: inherit;
 }

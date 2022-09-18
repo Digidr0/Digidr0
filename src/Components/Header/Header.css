@@ -26,8 +26,14 @@
 .header--link {
   font-size: 1.2em;
   margin: 1em;
+  transition: color 0.15s;
 }
-.header--link:hover {
+.header--link.about:hover {
+  color: var(--color-accent);
+}
+.header--link.links:hover {
   color: var(--color-accent2);
-  cursor: pointer;
+}
+.header--link.header--link.mail:hover:hover {
+  color: var(--color-accent3);
 }
