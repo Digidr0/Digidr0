@@ -12,7 +12,7 @@ function Header(props) {
         </a>
         <a
           className="header--link mail"
-          onClick={()=>window.open(`mailto:ildar.grankin@gmail.com`)}
+          onClick={()=>window.open(`mailto:digidro.work@gmail.com`)}
         >
           Contact
         </a>
