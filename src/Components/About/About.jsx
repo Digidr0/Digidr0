@@ -8,7 +8,7 @@ function About() {
   const [index, setIndex] = useState(1);
   useEffect(() => {
     window.addEventListener("scroll", () =>
-      setIndex(ImageScroll(30, ".About", 1.25))
+      setIndex(ImageScroll(30, ".About", 1.75))
     );
   }, []);
 

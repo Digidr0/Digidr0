@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   background-color: var(--background-color-accent);
-  background: linear-gradient(50deg, rgba(0, 0, 0, .2) 20%, var(--background-color-accent)60%);
+  background: linear-gradient(-50deg, rgba(0, 0, 0, .2) 20%, var(--background-color-accent)60%);
 }
 .about-bg-img,
 .about-bg-vid {
@@ -14,7 +14,7 @@
   pointer-events: none;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
@@ -27,7 +27,7 @@
   position: absolute;
   z-index: 2;
   padding: 2em;
-  left: 2em;
+  right: 2em;
   width: 20em;
   height: 30em;
 }
