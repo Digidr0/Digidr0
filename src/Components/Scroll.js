@@ -9,7 +9,7 @@ export default function ImageScroll(imageNumber, seletor, speed = 1) {
   if (Math.sign(value) === -1 || Math.sign(value) === 0) {
     value = 1;
   } else if (value >= imageNumber) {
-    value = imageNumber - 1 ;
+    value = imageNumber - 1;
   }
   // console.log(seletor, value);
   return value;

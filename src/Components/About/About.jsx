@@ -4,12 +4,31 @@ import imgArray from "./about-images";
 import ImageScroll from "../Scroll";
 
 function About() {
-  () => console.log(imgArray);
+  const loadingIndicator = <div>Loading...</div>;
+  const [isLoading, setIsLoading] = useState(true);
   const [index, setIndex] = useState(1);
-  useEffect(() => {
+  function ScrollListener() {
     window.addEventListener("scroll", () => {
-      setIndex(ImageScroll(30, ".About", 1.75));
+      setIndex(ImageScroll(30, ".About", 2));
     });
+  }
+  const cacheImages = async (srcArray) => {
+    console.log("%c...loading \"torus\" images", "color:goldenRod");
+    const promises = await srcArray.map((src) => {
+      return new Promise(function (resolve, reject) {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve();
+        img.onerror = reject();
+      });
+    });
+    await Promise.all(promises);
+    console.log("%c\"torus\" images loaded", "color:MediumSeaGreen");
+    setIsLoading(false);
+    ScrollListener();
+  };
+  useEffect(() => {
+    cacheImages(imgArray);
   }, []);
 
   return (

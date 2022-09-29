@@ -1,50 +1,61 @@
 import { useEffect, useState } from "react";
 import imgArray from "./profile-images";
 import ImageScroll from "../Scroll";
-import Preload from "react-preload";
 function Cube(props) {
   const loadingIndicator = <div>Loading...</div>;
+  const [isLoading, setIsLoading] = useState(true);
   const [index, setIndex] = useState(props.frames);
   const [blur, setBlur] = useState(
     (props.frames - 1) / (props.frames / props.blurMultiplier)
   );
-  useEffect(() => {
-    let counter = props.frames;
-    setTimeout(() => {
-      const i = setInterval(function () {
-        setIndex(counter);
+  const cacheImages = async (srcArray) => {
+    console.log("%c...loading \"cube\" images", 'color:goldenRod');
+    const promises = await srcArray.map((src) => {
+      return new Promise(function (resolve, reject) {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve();
+        img.onerror = reject();
+      });
+    });
+    await Promise.all(promises);
+    console.log("%c\"cube\" images loaded", 'color:MediumSeaGreen');
+    setIsLoading(false);
+    StartRotate(2000)
+  };
 
-        counter--;
-        setBlur((counter - 1) / (props.frames / props.blurMultiplier));
-        if (counter === 1) {
-          window.addEventListener("scroll", () => {
-            setIndex(ImageScroll(props.frames, ".Cube", 2.75));
-          });
-          clearInterval(i);
-        }
-      }, 75 / props.speed);
-    }, props.timeout * 2000);
+function StartRotate(duration = 1000){
+  let counter = props.frames;
+  setTimeout(() => {
+    const i = setInterval(function () {
+      setIndex(counter);
+
+      counter--;
+      setBlur((counter - 1) / (props.frames / props.blurMultiplier));
+      if (counter === 1) {
+        window.addEventListener("scroll", () => {
+          setIndex(ImageScroll(props.frames, ".Cube", 2.75));
+        });
+        clearInterval(i);
+      }
+    }, 75 / props.speed);
+  }, props.timeout * duration);
+}
+
+  useEffect(() => {
+    cacheImages(imgArray);
+
   }, []);
   return (
-    <div className="Cube">
-      <Preload
-        loadingIndicator={loadingIndicator}
-        images={imgArray}
-        autoResolveDelay={3000}
-        onError={this._handleImageLoadError}
-        onSuccess={this._handleImageLoadSuccess}
-        resolveOnError={true}
-        mountChildren={true}
-      >
-        {
-          <img
-            className="cube-img"
-            src={imgArray[index - 1]}
-            style={{ filter: `blur(${blur}px)` }}
-            loading="lazy"
-          ></img>
-        }
-      </Preload>
+    <div className="Cube">{
+      isLoading ?
+      loadingIndicator :
+      <img
+        className="cube-img"
+        src={imgArray[index - 1]}
+        style={{ filter: `blur(${blur}px)` }}
+        loading="lazy"
+      ></img>}
     </div>
   );
 }
