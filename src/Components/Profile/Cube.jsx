@@ -2,14 +2,16 @@ import { useEffect, useState } from "react";
 import imgArray from "./profile-images";
 import ImageScroll from "../Scroll";
 function Cube(props) {
-  const loadingIndicator = <div>Loading...</div>;
+  const loadingIndicator = (
+    <div style={{ width: "2em", height: "2em" }}>Loading...</div>
+  );
   const [isLoading, setIsLoading] = useState(true);
   const [index, setIndex] = useState(props.frames);
   const [blur, setBlur] = useState(
     (props.frames - 1) / (props.frames / props.blurMultiplier)
   );
   const cacheImages = async (srcArray) => {
-    console.log("%c...loading \"cube\" images", 'color:goldenRod');
+    console.log("%cloading \"cube\" images...", 'color:goldenRod');
     const promises = await srcArray.map((src) => {
       return new Promise(function (resolve, reject) {
         const img = new Image();

@@ -1,32 +1,31 @@
 .Nickname {
-    position: absolute;
-    height: 200%;
-    left: 10em;
-    margin-top: calc((80vh - 6em) / 2);
-    width: max-content;
-    z-index: 11;
-    pointer-events: none;
-    
-  }
-  .nickname--text {
-    width: max-content;
-    position: sticky;
-    top: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+  position: absolute;
+  height: 300%;
+  left: 10em;
+  margin-top: calc((80vh - 6em) / 2);
+  width: max-content;
+  z-index: 11;
+  pointer-events: none;
+}
+.nickname--text {
+  width: max-content;
+  position: sticky;
+  top: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 
-    background: linear-gradient(
-        43deg,
-        rgba(255, 204, 112, 1) 10%,
-        rgba(200, 80, 192, 1) 30%,
-        rgba(65, 88, 208, 1) 50%,
-        rgba(200, 80, 192, 1) 70%,
-        rgba(255, 204, 112, 1) 90%
-      );
-  }
-  .big{
-    font-size: 5em;
-  }
-  .small{
-    font-size: 2.5em;
-  }
+  background: linear-gradient(
+    43deg,
+    rgba(255, 204, 112, 1) 10%,
+    rgba(200, 80, 192, 1) 30%,
+    rgba(65, 88, 208, 1) 50%,
+    rgba(200, 80, 192, 1) 70%,
+    rgba(255, 204, 112, 1) 90%
+  );
+}
+.big {
+  font-size: 5em;
+}
+.small {
+  font-size: 2.5em;
+}

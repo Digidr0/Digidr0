@@ -1,0 +1,30 @@
+.Info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--background-color-accent);
+  background: linear-gradient(
+    50deg,
+    rgba(27, 98, 239, 0.1) 20%,
+    var(--background-color-dark) 60%
+  );
+}
+.info-img {
+  opacity: 0.75;
+  filter: grayscale(0.25);
+  pointer-events: none;
+}
+.info-features {
+  list-style: square;
+  font-size: 1.75em;
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  line-height: 1.2em;
+}
+.info-map{
+  cursor: pointer;
+  text-decoration: underline;
+}

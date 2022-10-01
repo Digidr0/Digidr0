@@ -72,3 +72,6 @@
 .project-live > *{
   color: var(--color-accent2);
 }
+.project-section-scroll{
+  margin-top: 2em;
+}

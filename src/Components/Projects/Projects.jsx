@@ -45,7 +45,9 @@ function Projects(props) {
 
         />
       </div>
-      <SectionScroll section="about me" href="about"/>
+      <div className="project-section-scroll">
+        <SectionScroll section="about me" href="about"/>
+      </div>
     </div>
   );
 }

@@ -85,3 +85,7 @@
   transition: filter(1s);
 
 }
+.profile-section-scroll{
+  z-index: 2;
+  margin-top: 2em;
+}

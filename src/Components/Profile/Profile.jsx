@@ -21,7 +21,9 @@ function Profile(props) {
         </div>
         <Cube frames={30} speed={1.25} timeout={0.4} blurMultiplier={10} />
       </div>
-      <SectionScroll section="my projects" href="projects" />
+      <div className="profile-section-scroll">
+        <SectionScroll section="my projects" href="projects" />
+      </div>
     </div>
   );
 }
