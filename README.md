@@ -3,7 +3,7 @@
 
 ### Some information about me:
 - `Name:` Ildar Grankin
-- `Age:` 21 years old
+- `Age:` 20 years old
 - `Current status`: looking for a job
 - `Education:` Secondary, Secondary special education as *Computer Networks engeneer*
 - `Hobbies:` music, 3d modeling, gaming
