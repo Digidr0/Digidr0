@@ -32,7 +32,7 @@
   min-width: 10em;
 
   object-fit: cover;
-  filter: saturate(0.2);
+  filter: saturate(0.5);
 }
 .project-cover.empty {
   background-size: 44px 77px;
@@ -74,4 +74,11 @@
 }
 .project-section-scroll{
   margin-top: 2em;
+}
+.projects-visibility{
+  position: absolute;
+  margin: 0.5em;
+  left: 0;
+  opacity: .5;
+  cursor: pointer;
 }

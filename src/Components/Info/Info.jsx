@@ -48,8 +48,10 @@ function Info() {
         <li>
           <b>City:</b>{" "}
           <span
-            className="info-map"
-            onClick={() => window.open(`https://maps.google.com/?q=Saint-Petersburg`)}
+            className="underline"
+            onClick={() =>
+              window.open(`https://maps.google.com/?q=Saint-Petersburg`)
+            }
           >
             Saint-Petersburg
           </span>
@@ -62,11 +64,23 @@ function Info() {
           <i>Computer Networks engeneer</i>
         </li>
         <li>
-          <b>Email: </b>digidro.work@gmail.com</li>
+          <b>Email: </b>
+          <span className="underline"
+            onClick={() =>
+              window.open(
+                `mailto:digidro.work@gmail.com?subject=Contact from website`
+              )
+            }
+          >
+            digidro.work@gmail.com
+          </span>
+        </li>
       </div>
-      {isLoading ?
-      loadingIndicator :
-      <img className="info-img" src={imgArray[index]} loading="lazy"></img>}
+      {isLoading ? (
+        loadingIndicator
+      ) : (
+        <img className="info-img" src={imgArray[index]} loading="lazy"></img>
+      )}
     </div>
   );
 }

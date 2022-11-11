@@ -8,6 +8,7 @@
     rgba(27, 98, 239, 0.1) 20%,
     var(--background-color-dark) 60%
   );
+  height: 100%;
 }
 .info-img {
   opacity: 0.75;
@@ -24,7 +25,7 @@
   gap: 1em;
   line-height: 1.2em;
 }
-.info-map{
+.underline{
   cursor: pointer;
   text-decoration: underline;
 }
