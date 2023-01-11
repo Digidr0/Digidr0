@@ -1,4 +1,4 @@
-# Hi there 👋, I am Digidr0!
+# Hi there 👋, I am Digidrо!
 ### Welcome to my page. I am a novice frontend developer. I am working with raw js, html and css, so as the React-components apps too.
 
 ### Some information about me:
