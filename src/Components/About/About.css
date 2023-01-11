@@ -5,7 +5,7 @@
   width: 100%;
 }
 .about-main {
-  height: 90vh;
+  height: 100vh;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -37,7 +37,7 @@
   position: absolute;
   z-index: 2;
   padding: 2em;
-  right: 2em;
+  right: 0em;
   width: 20em;
   height: 30em;
 }

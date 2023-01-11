@@ -8,9 +8,9 @@ function Projects(props) {
     <div className="Projects" id="projects">
       <div className="projects-visibility" onClick={() => setAnimation((prev) => !prev)}>
         {animation ? (
-          <span class="material-symbols-outlined">visibility</span>
+          <span className="material-symbols-outlined">visibility</span>
         ) : (
-          <span class="material-symbols-outlined">visibility_off</span>
+          <span className="material-symbols-outlined">visibility_off</span>
         )}
       </div>
       <div className="projects-grid">

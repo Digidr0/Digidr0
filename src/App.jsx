@@ -12,8 +12,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Nickname />
       <Header />
+      <Nickname />
       <Profile />
       <Projects />
       <About />

@@ -39,6 +39,7 @@ html {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 200, "opsz" 40;
+  user-select: none;
 }
 a,
 button {

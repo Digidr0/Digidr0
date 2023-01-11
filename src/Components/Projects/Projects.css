@@ -54,7 +54,7 @@
 }
 .project-link{
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 .project-repo, .project-live {
   opacity: 0.5;
@@ -64,12 +64,12 @@
 }
 
 .project-repo:hover, .project-live:hover {
-  opacity: 1;
+transition: color 0.2s;
 }
-.project-repo > *{
+.project-repo:hover{
   color: var(--color-accent);
 }
-.project-live > *{
+.project-live:hover{
   color: var(--color-accent2);
 }
 .project-section-scroll{
