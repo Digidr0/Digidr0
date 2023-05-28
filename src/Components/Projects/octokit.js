@@ -1,5 +1,5 @@
-import { Octokit, App } from "https://cdn.skypack.dev/octokit?dts";
-import { defineConfig, loadEnv } from "vite";
+// import { Octokit, App } from "https://cdn.skypack.dev/octokit?dts";
+// import { defineConfig, loadEnv } from "vite";
 export default async function GetContent(owner, repo, path) {
   console.log(config);
   const octokit = new Octokit({
