@@ -35,7 +35,7 @@ function Info() {
 
   return (
     <div className="Info" id="info">
-      <div className="info-features">
+      <ul className="info-features">
         <li>
           <b>Age:</b> 20 years, male
         </li>
@@ -43,7 +43,7 @@ function Info() {
           <b>Name:</b> Grankin Ildar
         </li>
         <li>
-          <b>Language:</b> Russian, English B1
+          <b>Language:</b> Russian, English B1, och lite svenska
         </li>
         <li>
           <b>City:</b>{" "}
@@ -57,7 +57,7 @@ function Info() {
           </span>
         </li>
         <li>
-          <b>Job:</b> Front-end developer
+          <b>Job:</b> Front-end developer, 3D artist
         </li>
         <li>
           <b>Education: </b>Secondary special education as{" "}
@@ -65,7 +65,8 @@ function Info() {
         </li>
         <li>
           <b>Email: </b>
-          <span className="underline"
+          <span
+            className="underline"
             onClick={() =>
               window.open(
                 `mailto:digidro.work@gmail.com?subject=Contact from website`
@@ -75,7 +76,14 @@ function Info() {
             digidro.work@gmail.com
           </span>
         </li>
-      </div>
+        <li>
+          <b>Favorite games: </b>Atomic Heart, Overwatch, Minecraft, Cyberpunk 2077
+        </li>
+        <li>
+          <b>Favorite musicians: </b>DVRST, Mujuice, plenka, кис-кис,
+          GONE.Fludd, FEDUK, Convolk
+        </li>
+      </ul>
       {isLoading ? (
         loadingIndicator
       ) : (

@@ -8,7 +8,7 @@ function Links(props) {
         <Link url="https://github.com/Digidr0" text="Github" />
         <Link url="https://steamcommunity.com/id/Digidro/" text="Steam" />
         <Link url="https://vk.com/digidro" text="VKontakte" />
-        <Link url="https://deviantart.com/Digidro" text="Devainart" />
+        <Link url="https://deviantart.com/Digidro" text="Deviantart" />
         <Link url="https://discordapp.com/users/330829326297726977" text="Discord" />
         <Link url="https://t.me/Digidro" text="Telegram" />
       </div>

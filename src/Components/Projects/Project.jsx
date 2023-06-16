@@ -41,7 +41,8 @@ function Project(props) {
       <div className="project-info">
         <h3 className="project-title">{getName()[4]}</h3>
         {/* <div className="project-description">{element}</div> */}
-        <div className="project-description">{description}</div>
+        {/* ADD LINKED DESCRIPTION */}
+        <div className="project-description">{props.description}</div>
         <div className="project-links">
           <div className="project-repo">
             <span className="material-symbols-outlined">folder_copy</span>
