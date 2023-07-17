@@ -10,6 +10,7 @@
   );
   height: 100%;
 }
+
 .info-img {
   opacity: 0.85;
   filter: grayscale(0.25);
@@ -29,4 +30,8 @@
 .underline{
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media all and (min-width: 600px){
+  .info-img {display: none;}
 }
