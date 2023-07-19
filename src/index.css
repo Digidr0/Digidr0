@@ -56,18 +56,43 @@ a:visited {
 @media all and (max-width: 1064px) {
   .Cube,
   .about-bg-img,
-  .info-img {
-position: absolute;
-opacity: 0.1;
+  .info-img,
+  .cube-img {
+    position: absolute;
+    opacity: 0.1;
     /* display: none; */
   }
-  .projects-grid{
-    grid-template-columns: 1fr;
+  .info-img
+{
+    width: 100vw;
+  }
+  .Projects{
+    width: 100vw;
   }
   .about-description{
-    padding: 1em
+    width: 100vw;
+    font-size: 1em;
+    position: relative;
   }
-  body{
+  .about-description-text{
+    padding-right: 1em;
+  }
+  .links-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .projects-grid {
+    padding-right: 0;
+    grid-template-columns: 1fr;
+  }
+  .Nickname{
+    margin-top: calc((80vh - 8em) / 2);
+left: 2em;
+  }
+  .about-description {
+    padding: 1em;
+  }
+  body {
     font-size: 12px;
   }
 }
