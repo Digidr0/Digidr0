@@ -15,4 +15,4 @@ Links:
 - Steam: [link](https://steamcommunity.com/id/Digidro/)
 - Deviantart: [link](https://deviantart.com/Digidro)
 - Discord: [Digidro#5472](https://discordapp.com/users/330829326297726977)
-- Email: digidro.work@gmail.com                                               [🔗My Personal website](https://digidr0.github.io/Digidr0/)
+- Email: digidro.work@gmail.com                                               [🔗My Personal website](https://digidr0.github.io)
