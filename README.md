@@ -3,7 +3,7 @@
 
 ### Some information about me:
 - `Name:` Ildar Grankin
-- `Age:` 21 years old
+- `Age:` 24 years old
 - `Current status`: looking for a job
 - `Education:` Secondary, Secondary special education as *Computer Networks engeneer*
 - `Hobbies:` music, 3d modeling, gaming
@@ -11,8 +11,7 @@
 
 Links:
 
-- VK: [link](https://vk.com/digidro)
 - Steam: [link](https://steamcommunity.com/id/Digidro/)
 - Deviantart: [link](https://deviantart.com/Digidro)
 - Discord: [Digidro#5472](https://discordapp.com/users/330829326297726977)
-- Email: digidro.work@gmail.com                                               [🔗My Personal website](https://digidr0.github.io)
+- Email: digidro.work@gmail.com                                               [🔗My Personal website](digidro.ruina.team)
